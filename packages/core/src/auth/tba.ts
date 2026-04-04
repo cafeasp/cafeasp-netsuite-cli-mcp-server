@@ -18,6 +18,7 @@ export class TBAAuth implements AuthProvider {
     const signature = this.generateSignature(method, url, nonce, timestamp);
 
     const params = [
+      `realm="${this.percentEncode(this.config.accountId)}"`,
       `oauth_consumer_key="${this.percentEncode(this.config.consumerKey)}"`,
       `oauth_nonce="${this.percentEncode(nonce)}"`,
       `oauth_signature="${this.percentEncode(signature)}"`,

@@ -28,6 +28,7 @@ describe("TBAAuth", () => {
     const authHeader = headers.Authorization;
 
     expect(authHeader).toContain('OAuth');
+    expect(authHeader).toContain('realm="1234567"');
     expect(authHeader).toContain('oauth_consumer_key="consumer-key-123"');
     expect(authHeader).toContain('oauth_token="token-id-789"');
     expect(authHeader).toContain('oauth_signature_method="HMAC-SHA256"');
