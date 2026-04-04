@@ -4,3 +4,5 @@ coverage/
 *.tsbuildinfo
 .DS_Store
 docs/superpowers/
+CLAUDE.md
+netsuite-cli-mcp-guide.md
