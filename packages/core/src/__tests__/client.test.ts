@@ -19,10 +19,10 @@ describe("NetSuiteClient", () => {
   });
 
   describe("account ID formatting", () => {
-    it("formats account ID for URL (lowercase, hyphens to underscores)", () => {
-      const client = new NetSuiteClient(mockAuthProvider, "1234567-SB1");
+    it("formats account ID for URL (lowercase, underscores to hyphens)", () => {
+      const client = new NetSuiteClient(mockAuthProvider, "1234567_SB1");
       expect(client.baseUrl).toBe(
-        "https://1234567_sb1.suitetalk.api.netsuite.com/services/rest"
+        "https://1234567-sb1.suitetalk.api.netsuite.com/services/rest"
       );
     });
 

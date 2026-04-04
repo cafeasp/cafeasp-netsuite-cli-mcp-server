@@ -19,7 +19,7 @@ export class NetSuiteClient {
 
   constructor(auth: AuthProvider, accountId: string) {
     this.auth = auth;
-    const formattedAccountId = accountId.toLowerCase().replace(/-/g, "_");
+    const formattedAccountId = accountId.toLowerCase().replace(/_/g, "-");
     this.baseUrl = `https://${formattedAccountId}.suitetalk.api.netsuite.com/services/rest`;
   }
 
