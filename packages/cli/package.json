@@ -1,0 +1,25 @@
+{
+  "name": "@cafeasp/netsuite-cli",
+  "version": "0.1.0",
+  "description": "NetSuite CLI — query, browse, and manage NetSuite from the terminal",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "netsuite": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@cafeasp/netsuite-core": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
