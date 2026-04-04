@@ -17,7 +17,8 @@ export class SuiteQLClient {
     let path = "/query/v1/suiteql";
     const params = new URLSearchParams();
 
-    if (options?.limit !== undefined) params.set("limit", String(options.limit));
+    // NetSuite requires limit to be set explicitly — without it, 0 items are returned
+    params.set("limit", String(options?.limit ?? 1000));
     if (options?.offset !== undefined) params.set("offset", String(options.offset));
 
     const query = params.toString();

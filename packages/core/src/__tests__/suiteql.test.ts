@@ -36,7 +36,7 @@ describe("SuiteQLClient", () => {
 
       expect(mockRequest).toHaveBeenCalledWith(
         "POST",
-        "/query/v1/suiteql",
+        "/query/v1/suiteql?limit=1000",
         { q: "SELECT id, companyname FROM customer" },
         { Prefer: "transient" }
       );
