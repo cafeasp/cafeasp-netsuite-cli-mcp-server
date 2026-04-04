@@ -4,3 +4,4 @@ export type {
   NetSuiteConfig,
   AuthProvider,
 } from "./types.js";
+export { TBAAuth } from "./tba.js";
