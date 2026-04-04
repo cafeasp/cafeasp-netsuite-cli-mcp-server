@@ -38,7 +38,7 @@ describe("auth types", () => {
 
   it("AuthProvider interface shape is correct", () => {
     const mockProvider: AuthProvider = {
-      getAuthHeaders: async (_method: string, _url: string) => ({
+      getAuthHeaders: async () => ({
         Authorization: "test",
       }),
       getAuthMethod: () => "tba" as AuthMethod,
