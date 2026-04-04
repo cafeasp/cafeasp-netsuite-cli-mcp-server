@@ -1,0 +1,23 @@
+{
+  "name": "@cafeasp/netsuite-mcp",
+  "version": "0.1.0",
+  "description": "NetSuite MCP server for AI-assisted NetSuite workflows",
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@cafeasp/netsuite-core": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
