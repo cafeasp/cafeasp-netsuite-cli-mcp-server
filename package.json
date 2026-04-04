@@ -1,0 +1,26 @@
+{
+  "name": "@cafeasp/netsuite-tools",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NetSuite developer tools — CLI and MCP server",
+  "workspaces": [
+    "packages/core",
+    "packages/cli",
+    "packages/mcp-server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "vitest run",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsup": "^8.4.0",
+    "vitest": "^3.1.0",
+    "eslint": "^9.22.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
