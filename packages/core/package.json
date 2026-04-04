@@ -14,6 +14,13 @@
     "access": "public"
   },
   "license": "MIT",
+  "author": "cafeasp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cafeasp/netsuite-cli-mcp-server.git",
+    "directory": "packages/core"
+  },
+  "keywords": ["netsuite", "suiteql", "rest-api", "tba", "oauth", "erp"],
   "engines": {
     "node": ">=18"
   }

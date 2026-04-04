@@ -4,6 +4,7 @@
   "description": "NetSuite MCP server for AI-assisted NetSuite workflows",
   "type": "module",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -21,6 +22,13 @@
     "access": "public"
   },
   "license": "MIT",
+  "author": "cafeasp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cafeasp/netsuite-cli-mcp-server.git",
+    "directory": "packages/mcp-server"
+  },
+  "keywords": ["netsuite", "mcp", "model-context-protocol", "ai", "claude", "suiteql"],
   "engines": {
     "node": ">=18"
   }
