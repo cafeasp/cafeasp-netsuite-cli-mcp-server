@@ -16,7 +16,7 @@ export function createInfoCommand(parentOptions: () => {
         const { suiteql, config } = createCLIClient(globalOpts.profile);
 
         const result = await suiteql.query(
-          "SELECT CURRENT_TIMESTAMP AS servertime FROM dual"
+          "SELECT TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') AS servertime FROM dual"
         );
 
         const serverTime =
